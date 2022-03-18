@@ -29,6 +29,7 @@ export class CoffeesController {
         if(!coffee) {
             throw new NotFoundException(`Coffee not #${id} found`);
         }
+        return coffee;
     }
 
     @Post()
